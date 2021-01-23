@@ -1,0 +1,45 @@
+.editCourse{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cardContainer {
+  width: 300px;
+  float: left;
+  height: 320px; 
+}
+.cardImage {
+  height: 200px;
+}
+div.loader {
+  height: 10em;
+  position: relative;
+}
+div.loader {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.search{
+  margin-right: 50px;
+  width: 300px;
+  height: 50px;
+}
+.courseImage{
+  height: 320px;
+}
+.text{
+  margin-bottom: 11px;
+}
+.error{
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+.Edit{
+  margin-top: -7px;
+
+}

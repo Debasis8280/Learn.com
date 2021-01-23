@@ -1,0 +1,18 @@
+.loader{
+    float: center;
+}
+.increment{
+    display: none !important;
+}
+.course-list-main{
+    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.addCourse{
+    height: 100%;
+    width: 100%;
+    float: right;
+}

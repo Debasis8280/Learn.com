@@ -1,0 +1,3 @@
+export const GET_SIDEBAR = "GET_SIDEBAR";
+export const SHOW_COURSE_DATA = "SHOW_COURSE_DATA"
+export const TITLE_DATA = "TITLE_DATA"

@@ -1,0 +1,8 @@
+.usingTitle{
+    margin-left: 2%;
+}
+@media only screen and (max-width: 1435px){
+    .usingTitle{
+        margin-left: -260px;
+    }
+}
