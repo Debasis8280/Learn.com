@@ -27,7 +27,7 @@ function AuthState({children}) {
    //login Admin
    const login = async (data) => {
        try{
-            const res = await Axios.post("/admin/login",data);
+            const res = await Axios.post("https://learn-com-in.herokuapp.com/admin/login",data);
             if(res.data.result === "Ok"){
                 swal({
                     icon:"success",
