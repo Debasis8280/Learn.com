@@ -2,8 +2,6 @@ import React, { useContext, useEffect } from 'react'
 import GoogleLogin from 'react-google-login';
 import AuthContext from '../../Context/AuthContext/AuthContext';
 
-
-
 const Login = (props) => {
     const {login,adminAuth} = useContext(AuthContext);
    useEffect(() => {
@@ -29,7 +27,7 @@ const Login = (props) => {
         <div className="container">
             <div className="row justify-content-center" id="google">
             <GoogleLogin 
-                clientId="208031768939-0n22bao04o2ge8r8ca7v1f1vnj5l04u8.apps.googleusercontent.com"
+                clientId="953777575523-cujjughih9e61dh10r2e0bl667h1rgvt.apps.googleusercontent.com"
                 buttonText="Login"
                 onSuccess={responseGoogle}
                 onFailure={responseGoogle}
