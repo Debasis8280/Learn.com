@@ -45,7 +45,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://learn-com.netlify.app",
+  "proxy": "https://learn-com-in.herokuapp.com",
   "secure": false,
   "devDependencies": {}
 }
