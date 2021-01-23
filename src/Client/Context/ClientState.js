@@ -18,7 +18,7 @@ function ClientState({ children }) {
 
     //get Sidebar data
     const sidebar = async () => {
-        const res = await Axios.get("/client/title");
+        const res = await Axios.get("https://learn-com-in.herokuapp.com/client/title");
         if (res.data.result === "Ok") {
             dispatch({
                 type: GET_SIDEBAR,
@@ -29,7 +29,7 @@ function ClientState({ children }) {
 
     //get course data using collection
     const courseData = async (collection) => {
-        const res = await Axios.get("/client/courseData", { params: { collection: collection } });
+        const res = await Axios.get("https://learn-com-in.herokuapp.com/client/courseData", { params: { collection: collection } });
         if(res.data.result === "Ok"){
             dispatch({
                 type:SHOW_COURSE_DATA,
@@ -39,7 +39,7 @@ function ClientState({ children }) {
     }
     //get courseData using id 
     const titleWiseData = async(collection,id)=>{
-        const res = await Axios.get("/client/getDataUsingTitle",{params:{collection:collection,id:id}})
+        const res = await Axios.get("https://learn-com-in.herokuapp.com/client/getDataUsingTitle",{params:{collection:collection,id:id}})
        if(res.data.result === "Ok"){
            dispatch({
                type:TITLE_DATA,
