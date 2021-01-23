@@ -45,6 +45,6 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://learn-com-in.herokuapp.com/",
+  "proxy": "https://learn-com-in.herokuapp.com",
   "devDependencies": {}
 }
