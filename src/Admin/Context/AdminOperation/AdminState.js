@@ -28,7 +28,7 @@ function AdminState({ children }) {
 
   //create collection
   const createCollection = async (collection) => {
-    const res = await Axios.post("https://frozen-hamlet-07280.herokuapp.com/course/createCollection", collection, {
+    const res = await Axios.post("https://wobbly-speckle-nylon.glitch.me/course/createCollection", collection, {
       headers: { "x-auth-Debasis": token },
     });
     if (res.data.result === "Ok") {
@@ -44,7 +44,7 @@ function AdminState({ children }) {
 
   //get collection list
   const getCollection = async () => {
-    const res = await Axios.get("https://frozen-hamlet-07280.herokuapp.com/course/collection-list", {
+    const res = await Axios.get("https://wobbly-speckle-nylon.glitch.me/course/collection-list", {
       headers: { "x-auth-Debasis": token },
     });
     if (res.data.result === "Ok") {
@@ -61,7 +61,7 @@ function AdminState({ children }) {
 
   //delete Collection
   const deleteCollections = async (collection) => {
-    const res = await Axios.get("https://frozen-hamlet-07280.herokuapp.com/course/deleteCollection", {
+    const res = await Axios.get("https://wobbly-speckle-nylon.glitch.me/course/deleteCollection", {
       params: { collection: collection },
       headers: { "x-auth-Debasis": token },
     });
@@ -74,7 +74,7 @@ function AdminState({ children }) {
   };
   // save data
   const writeCourse = async (formData) => {
-    const res = await Axios.post("https://frozen-hamlet-07280.herokuapp.com/course/save/", formData, {
+    const res = await Axios.post("https://wobbly-speckle-nylon.glitch.me/course/save/", formData, {
       headers: { "x-auth-Debasis": token },
     });
     if (res.data.result === "Ok") {
@@ -86,7 +86,7 @@ function AdminState({ children }) {
 
   //getCourse data
   const getCourseData = async (collection) => {
-    const res = await Axios.get("https://frozen-hamlet-07280.herokuapp.com/course/getCourseData", {
+    const res = await Axios.get("https://wobbly-speckle-nylon.glitch.me/course/getCourseData", {
       params: { collection: collection },
       headers: { "x-auth-Debasis": token },
     });
@@ -102,7 +102,7 @@ function AdminState({ children }) {
 
   //search Course
   const searchCourse = async (search, collection) => {
-    const res = await Axios.get("https://frozen-hamlet-07280.herokuapp.com/course/search", {
+    const res = await Axios.get("https://wobbly-speckle-nylon.glitch.me/course/search", {
       params: { search: search, collection: collection },
       headers: { "x-auth-Debasis": token },
     });
@@ -122,7 +122,7 @@ function AdminState({ children }) {
   //show edit data
 
   const ShowEditData = async (collection, id) => {
-    const res = await Axios.get("https://frozen-hamlet-07280.herokuapp.com/course/getSelectedData", {
+    const res = await Axios.get("https://wobbly-speckle-nylon.glitch.me/course/getSelectedData", {
       params: { collection: collection, id: id },
       headers: { "x-auth-Debasis": token },
     });
@@ -136,7 +136,7 @@ function AdminState({ children }) {
 
   //update Course
   const updateCourse = async (updateData,collection,id) => {
-    const res = await Axios.put("https://frozen-hamlet-07280.herokuapp.com/course/updateCourse",updateData, {headers: { "x-auth-Debasis": token }});
+    const res = await Axios.put("https://wobbly-speckle-nylon.glitch.me/course/updateCourse",updateData, {headers: { "x-auth-Debasis": token }});
     if(res.data.result === "Ok"){
       toast.success(res.data.message);
       ShowEditData(collection,id);
@@ -146,7 +146,7 @@ function AdminState({ children }) {
   //delete courese
 
   const deleteCourseData =async (collection,id) => {
-      const res = await Axios.delete("https://frozen-hamlet-07280.herokuapp.com/course/delete",{data:{collection:collection,id:id},headers: { "x-auth-Debasis": token }})
+      const res = await Axios.delete("https://wobbly-speckle-nylon.glitch.me/course/delete",{data:{collection:collection,id:id},headers: { "x-auth-Debasis": token }})
       if(res.data.result === "Ok"){
         toast.success(res.data.message);
         getCourseData(collection)
