@@ -27,7 +27,7 @@ function AuthState({children}) {
    //login Admin
    const login = async (data) => {
        try{
-            const res = await Axios.post("https://learn-backed.herokuapp.com/admin/login",data);
+            const res = await Axios.post("http://learn-backend.eu-gb.mybluemix.net/admin/login",data);
             if(res.data.result === "Ok"){
                 swal({
                     icon:"success",
@@ -61,7 +61,7 @@ function AuthState({children}) {
    //get admin 
    const getAdmin = async () =>{
        try{
-        const res = await Axios.get("https://learn-backed.herokuapp.com/admin/getAdmin",{headers:{"x-auth-Debasis":token}})
+        const res = await Axios.get("http://learn-backend.eu-gb.mybluemix.net/admin/getAdmin",{headers:{"x-auth-Debasis":token}})
         if(res.data.result === "Ok"){
             disPatch({
                 type:GET_ADMIN,
