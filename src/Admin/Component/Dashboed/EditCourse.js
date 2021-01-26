@@ -110,7 +110,7 @@ function EditCourse(props) {
                             <CardActionArea>
                               <CardMedia
                                 className={classes.media}
-                                image={`http://localhost:8080/icon/${data.coursePhoto}`}
+                                image={`https://learn-backend.zeet.app/icon/${data.coursePhoto}`}
                                 title="Contemplative Reptile"
                               />
                               <CardContent>
