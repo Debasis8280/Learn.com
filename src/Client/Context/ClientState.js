@@ -18,7 +18,7 @@ function ClientState({ children }) {
 
     //get Sidebar data
     const sidebar = async () => {
-        const res = await Axios.get("https://wobbly-speckle-nylon.glitch.me/client/title");
+        const res = await Axios.get("https://learn-backend.cfapps.us10.hana.ondemand.com/client/title");
         if (res.data.result === "Ok") {
             dispatch({
                 type: GET_SIDEBAR,
@@ -39,7 +39,7 @@ function ClientState({ children }) {
     }
     //get courseData using id 
     const titleWiseData = async(collection,id)=>{
-        const res = await Axios.get("https://wobbly-speckle-nylon.glitch.me/client/getDataUsingTitle",{params:{collection:collection,id:id}})
+        const res = await Axios.get("https://learn-backend.cfapps.us10.hana.ondemand.com/client/getDataUsingTitle",{params:{collection:collection,id:id}})
        if(res.data.result === "Ok"){
            dispatch({
                type:TITLE_DATA,
