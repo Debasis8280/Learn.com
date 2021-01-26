@@ -148,7 +148,7 @@ function Course() {
                     <CardActionArea>
                       <CardMedia
                         className={classes.media}
-                        image={`https://learn-com-in.herokuapp.com/icon/${data.coursePhoto}`}
+                        image={`https://learn-backend.cfapps.us10.hana.ondemand.com/icon/${data.coursePhoto}`}
                         title="Contemplative Reptile"
                       />
                       <CardContent>
