@@ -29,7 +29,7 @@ function ClientState({ children }) {
 
     //get course data using collection
     const courseData = async (collection) => {
-        const res = await Axios.get("ttps://learn-backend.cfapps.us10.hana.ondemand.com/client/courseData", { params: { collection: collection } });
+        const res = await Axios.get("https://learn-backend.cfapps.us10.hana.ondemand.com/client/courseData", { params: { collection: collection } });
         if(res.data.result === "Ok"){
             dispatch({
                 type:SHOW_COURSE_DATA,
