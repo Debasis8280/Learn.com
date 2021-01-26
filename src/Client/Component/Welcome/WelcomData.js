@@ -8,7 +8,6 @@ import Typography from '@material-ui/core/Typography';
 import ClientContext from '../../Context/ClientContext';
 import Loader from 'react-loader-spinner';
 import "./css/welcomeData.css";
-import { Button, CardActions } from '@material-ui/core';
 const useStyles = makeStyles({
   root: {
     width: 200,
