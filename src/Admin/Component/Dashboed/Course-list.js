@@ -148,7 +148,7 @@ function Course() {
                     <CardActionArea>
                       <CardMedia
                         className={classes.media}
-                        image={`https://debasis8280-bl.zeet.app/icon/${data.coursePhoto}`}
+                        image={`https://learn-backend.cfapps.us10.hana.ondemand.com/icon/${data.coursePhoto}`}
                         title="Contemplative Reptile"
                       />
                       <CardContent>
