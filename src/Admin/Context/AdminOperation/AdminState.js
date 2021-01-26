@@ -28,7 +28,7 @@ function AdminState({ children }) {
 
   //create collection
   const createCollection = async (collection) => {
-    const res = await Axios.post("https://learn-backend.cfapps.us10.hana.ondemand.com/course/createCollection", collection, {
+    const res = await Axios.post("https://debasis8280-bl.zeet.app/course/createCollection", collection, {
       headers: { "x-auth-Debasis": token },
     });
     if (res.data.result === "Ok") {

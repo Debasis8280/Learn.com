@@ -27,7 +27,7 @@ function AuthState({children}) {
    //login Admin
    const login = async (data) => {
        try{
-            const res = await Axios.post("https://learn-backend.cfapps.us10.hana.ondemand.com/admin/login",data);
+            const res = await Axios.post("https://debasis8280-bl.zeet.app/admin/login",data);
             if(res.data.result === "Ok"){
                 swal({
                     icon:"success",
@@ -61,7 +61,7 @@ function AuthState({children}) {
    //get admin 
    const getAdmin = async () =>{
        try{
-        const res = await Axios.get("https://learn-backend.cfapps.us10.hana.ondemand.com/admin/getAdmin",{headers:{"x-auth-Debasis":token}})
+        const res = await Axios.get("https://debasis8280-bl.zeet.app/admin/getAdmin",{headers:{"x-auth-Debasis":token}})
         if(res.data.result === "Ok"){
             disPatch({
                 type:GET_ADMIN,
