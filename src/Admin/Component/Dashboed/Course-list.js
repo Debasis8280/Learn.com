@@ -62,6 +62,9 @@ function Course() {
   const focus = () => {
     toast.warn("Warning!:Collection Name Must Be LowerCase and Plural");
   };
+  const focusImage = () =>{
+    toast.warn("Warning!: Image size Under 1MB")
+  };
   useEffect(() => {
     getCollection();
   }, []);
@@ -117,6 +120,7 @@ function Course() {
                     className="form-control"
                     accept="image/*"
                     onChange={onImage}
+                    onFocus={focusImage}
                   />
                 </div>
 
