@@ -11,6 +11,9 @@ function ShowCourseDataUsingTitle(props) {
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id])
+  function UnsafeComponent({ html }) {
+    return <div dangerouslySetInnerHTML={{ __html: html }} />;
+  }
   return (
     <div className="usingTitle">
       {!loading ? (
@@ -23,7 +26,8 @@ function ShowCourseDataUsingTitle(props) {
           </div>
           <div className="col">
             <p className="col">
-              {titleData.body}
+              {/* {titleData.body} */}
+              {<UnsafeComponent html={titleData.body} />}
             </p>
           </div>
           {titleData.photo ? (
