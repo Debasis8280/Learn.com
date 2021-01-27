@@ -52,7 +52,7 @@ function ShowCourseData(props) {
                   }} to={`/title/${data._id}`} key={key} className="title" style={{ textDecoration: "none" }}><div>{data.title}</div></NavLink>
                 )
               })}
-
+              <p>coming soon</p>
             </div>
           </div>
 

@@ -31,6 +31,7 @@ function SideBar() {
             return <a href={`course/${data.courseName}/${collectionName[i]}`}
               key={key} style={{ textDecoration: "none" }}><span className="sidebarData" >{data.courseName}<br /></span><span className="increment">{i++}</span></a>
           })}
+          <p>coming soon</p>
         </div>
       </div>
       <div id="sidebarWelcomedata">
